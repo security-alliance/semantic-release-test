@@ -1,6 +1,6 @@
 {
     "name": "@security-alliance/semantic-release-test",
-    "version": "0.0.0",
+    "version": "0.0.0-development",
     "description": "Test package",
     "keywords": [
         "security-alliance",
