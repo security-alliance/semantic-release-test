@@ -1,17 +1,13 @@
 {
   "branches": [
-    { "name": "release/1.x.x", "range": "1.x.x", "channel": "1.x.x" },
-    { "name": "release/2.x.x", "range": "2.x.x", "channel": "latest" }
+    {"name": "release/*", "channel": "latest"}
   ],
   "plugins": [
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        "preset": "conventionalcommits"
-      }
-    ],
+    ["@semantic-release/commit-analyzer", {
+      "preset": "conventionalcommits"
+    }],
     "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
+    "@semantic-release/changelog", 
     "@semantic-release/npm",
     "@semantic-release/github"
   ]
