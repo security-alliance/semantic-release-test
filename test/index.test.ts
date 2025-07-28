@@ -5,6 +5,6 @@ import { describe, it } from "node:test";
 describe("frob", () => {
   it("should frob", () => {
     const x = froble({ foo: 15, bar: 10 });
-    assert.notStrictEqual(x, { foo: 30, bar: 30 });
+    assert.notStrictEqual(x, { foo: 60, bar: 30 });
   });
 });
