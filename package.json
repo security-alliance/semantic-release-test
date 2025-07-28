@@ -1,0 +1,44 @@
+{
+    "name": "@security-alliance/semantic-release-test",
+    "version": "0.0.0",
+    "description": "Test package",
+    "keywords": [
+        "security-alliance",
+        "test"
+    ],
+    "homepage": "https://github.com/security-alliance/semantic-release-test",
+    "bugs": {
+        "url": "https://github.com/security-alliance/semantic-release-test/issues"
+    },
+    "license": "MIT",
+    "author": "Security Alliance",
+    "type": "module",
+    "files": [
+        "dist/"
+    ],
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "repository": "github:security-alliance/semantic-release-test",
+    "scripts": {
+        "build": "rm -rf dist/; tsc",
+        "test": "mocha",
+        "prepublishOnly": "pnpm run build",
+        "prettier:check": "npx prettier -c \"**/*.{js,ts,md,json,yml,yaml}\"",
+        "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,json,yml,yaml}\""
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/commit-analyzer": "^13.0.1",
+        "@semantic-release/github": "^11.0.3",
+        "@semantic-release/npm": "^12.0.2",
+        "@semantic-release/release-notes-generator": "^14.0.3",
+        "@types/node": "^24.1.0",
+        "mocha": "^11.7.1",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3"
+    }
+}
