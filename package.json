@@ -31,6 +31,7 @@
         "access": "public"
     },
     "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
         "@types/node": "^24.1.0",
         "mocha": "^11.7.1",
         "tsx": "^4.20.3",
